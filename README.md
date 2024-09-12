@@ -1,22 +1,31 @@
 To create a Node.js API with TypeScript, you can follow these steps:
 
 #Setup Project Directory
+
 Create a new directory for your project and navigate into it:
 
 mkdir node-ts-mongodb-crud
+
 cd node-ts-mongodb-crud
 
 #2. Initialize the Project
+
 Run the following command to initialize a new Node.js project:
 
 npm init -y
+
 This will generate a package.json file with default configurations.
 
 #3. Install Dependencies
+
 You will need to install the following dependencies:
+
 express: For creating API routes.
+
 typescript: To enable TypeScript in the project.
+
 ts-node-dev: For running TypeScript directly.
+
 @types/node and @types/express: Type definitions for Node.js and Express.
 
 Install them using:
