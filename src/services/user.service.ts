@@ -7,7 +7,7 @@ export class UserService {
     const user = new UserModel(userData);
     return await user.save();
   }
-
+  
   async getUsers(): Promise<IUser[]> {
     return await UserModel.find();
   }

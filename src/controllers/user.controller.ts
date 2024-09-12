@@ -3,8 +3,7 @@ import { injectable } from 'tsyringe';
 import { UserService } from '../services/user.service';
 
 @injectable()
-export class UserController {
-  // No decorator on constructor parameters, just on the class
+export class UserController {  
   constructor(
     private userService: UserService  // tsyringe will inject this service automatically
   ) {}
@@ -17,7 +16,6 @@ export class UserController {
       return res.status(400).json({ message: error.message });
     }
   }
-
   async getUsers(req: Request, res: Response): Promise<Response> {
     try {
       const users = await this.userService.getUsers();
