@@ -1,8 +1,8 @@
-To create a Node.js API with TypeScript, you can follow these steps:
+#To create a Node.js API with TypeScript, you can follow these steps:
 
-Install mongodb  in your local pc/server
+##Install mongodb  in your local pc/server
 
-1.Setup Project Directory
+###1.Setup Project Directory
 
   Create a new directory for your project and navigate into it:
 
