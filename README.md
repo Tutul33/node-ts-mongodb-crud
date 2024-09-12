@@ -10,7 +10,7 @@ mkdir node-ts-mongodb-crud
 
 cd node-ts-mongodb-crud
 
-2. Initialize the Project
+2.Initialize the Project
 
 Run the following command to initialize a new Node.js project:
 
@@ -18,7 +18,7 @@ npm init -y
 
 This will generate a package.json file with default configurations.
 
-3. Install Dependencies
+3.Install Dependencies
 
 You will need to install the following dependencies:
 
@@ -44,7 +44,7 @@ tsyringe: A dependency injection library for TypeScript.
 
 reflect-metadata: Required for decorators to work in TypeScript.
 
-4. Setup TypeScript Configuration
+4.Setup TypeScript Configuration
    
 Run the following command to create a tsconfig.json file:
 
@@ -65,7 +65,7 @@ This will generate the tsconfig.json file. You can modify it to suit your needs.
   "include": ["src"],
   "exclude": ["node_modules"]
 }
-5. Create Folder Structure
+5.Create Folder Structure
 
 Create the src directory, which will contain all the TypeScript source files:
 
