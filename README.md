@@ -71,7 +71,7 @@ Create the src directory, which will contain all the TypeScript source files:
 
 mkdir src
 
-Put project functional folder and file inside src folder.
+Create the following folder structure for your project:
 
 node-ts-mongodb-crud
 
