@@ -53,17 +53,29 @@
   #### This will generate the tsconfig.json file. You can modify it to suit your needs. Here’s a basic example configuration:
 
   {
+  
    "compilerOptions": {
+   
     "target": "ES6",
+    
     "module": "commonjs",
+    
     "outDir": "./dist",
+    
     "strict": true,
+    
     "esModuleInterop": true,
+    
     "skipLibCheck": true,
+    
     "forceConsistentCasingInFileNames": true
+    
    },
+   
    "include": ["src"],
+   
    "exclude": ["node_modules"]
+   
   }
 ### 5.Create Folder Structure
 
