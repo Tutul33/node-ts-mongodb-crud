@@ -115,8 +115,68 @@
 
   └── tsconfig.json
 
-  Run the Application
 
+# Install necessary packages
+
+npm install express bcryptjs jsonwebtoken tsyringe mongoose
+
+npm install @types/express @types/bcryptjs @types/jsonwebtoken
+
+# Step 2: Authentication and Authorization
+
+You will need to use JWT (JSON Web Tokens) for authentication. Middleware will be created for both public and private routes.
+
+src/middleware/auth.ts
+
+# Public and Private Routes
+
+src/routes/user.routes.ts
+
+# UserController with Authentication and Authorization
+
+src/controllers/user.controller.ts
+
+Methods:
+
+async register(req: Request, res: Response)
+
+async login(req: Request, res: Response)
+
+# Global Error Handling Middleware
+
+src/middleware/errorHandler.ts
+
+src/app.ts 
+
+//Add this in app.ts file
+
+app.use(globalErrorHandler);
+
+# User Service
+
+src/services/user.service.ts
+
+async createUser(data: Partial<IUser>): Promise<IUser> {
+    return UserModel.create(data);
+  }
+
+  async findUserByEmail(email: string): Promise<IUser | null> {
+    return UserModel.findOne({ email });
+  }
+
+# This setup includes:
+
+Authentication via JWT.
+
+Authorization with middleware (authenticateToken).
+
+Global error handling.
+
+Separation of public and private routes using middleware.
+
+User registration and login functionality.
+
+# Run the Application
 To run the API in development mode, use the following command:
 
 npm run dev
