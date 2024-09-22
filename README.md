@@ -95,6 +95,12 @@
 
   │   │   └── user.controller.ts
 
+  │   ├── middleware
+
+  │   │   └── auth.ts
+
+  │   │   └── errorHandler.ts
+
   │   ├── models
 
   │   │   └── user.model.ts
@@ -106,6 +112,10 @@
   │   ├── services
 
   │   │   └── user.service.ts
+
+  │   ├── types
+
+  │   │   └── custom.d.ts
 
   │   ├── app.ts
 
