@@ -110,6 +110,9 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
   },
-  "include": ["src"],
+  "include": [
+    "src/**/*.ts",  // Ensure this includes your custom.d.ts file
+    "src/types/custom.d.ts"
+  ],
   "exclude": ["node_modules"]
 }

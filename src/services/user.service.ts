@@ -3,9 +3,12 @@ import UserModel, { IUser } from '../models/user.model';
 
 @injectable()
 export class UserService {
-  async createUser(userData: IUser): Promise<IUser> {
-    const user = new UserModel(userData);
-    return await user.save();
+  async createUser(data: Partial<IUser>): Promise<IUser> {
+    return UserModel.create(data);
+  }
+
+  async findUserByEmail(email: string): Promise<IUser | null> {
+    return UserModel.findOne({ email });
   }
   
   async getUsers(): Promise<IUser[]> {

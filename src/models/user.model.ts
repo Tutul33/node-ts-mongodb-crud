@@ -9,6 +9,7 @@ export interface IUser extends Document {
   email: string;
   phone: string;
   address: string;
+  password: string;
 }
 
 const userSchema = new Schema<IUser>({
@@ -19,8 +20,9 @@ const userSchema = new Schema<IUser>({
   createDate: { type: Date, default: Date.now },
   email: { type: String, required: true, unique: true },
   phone: { type: String, required: true },
-  address: { type: String, required: true }
-});
+  address: { type: String, required: true },
+  password: { type: String, required: true }
+},{ timestamps: true });
 
 const UserModel = model<IUser>('User', userSchema);
 
